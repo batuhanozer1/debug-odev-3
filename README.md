@@ -27,7 +27,7 @@ Birinci Breakpoint den productId değerini product objesini  products arrayını
 Üçüncü Breakpoint den this.items arrayını sepetteki toplam ürün miktarını sepette ekli olan ürünlerin kaçar tane ekli oldugunu gözlemledim.
 
 
-## ikinci hata## 
+## İkinci hata ## 
 bu hata için ekstra Breakpoint vs eklenmesine gerek yok çünkü hata çok açık += yapmak yerine = kullansak 
 hata mesajları eklemek yerine mevcuttaki hata mesajını yazacak yani ne kadar kod gönderilirse gönderilsin tek hata gösterilecek 
 ek olarak showMessage fonksiyonunda oldugu gibi 3 saniyelik bir zaman ekledim böylece mesak 3 saniye sonunda kaybolacak.
