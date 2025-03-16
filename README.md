@@ -27,7 +27,7 @@ Birinci Breakpoint den productId değerini product objesini  products arrayını
 Üçüncü Breakpoint den this.items arrayını sepetteki toplam ürün miktarını sepette ekli olan ürünlerin kaçar tane ekli oldugunu gözlemledim.
 
 
-## İkinci hata ## 
+## ikinci hata## 
 bu hata için ekstra Breakpoint vs eklenmesine gerek yok çünkü hata çok açık += yapmak yerine = kullansak 
 hata mesajları eklemek yerine mevcuttaki hata mesajını yazacak yani ne kadar kod gönderilirse gönderilsin tek hata gösterilecek 
 ek olarak showMessage fonksiyonunda oldugu gibi 3 saniyelik bir zaman ekledim böylece mesak 3 saniye sonunda kaybolacak.
@@ -35,6 +35,9 @@ ek olarak showMessage fonksiyonunda oldugu gibi 3 saniyelik bir zaman ekledim b�
 ## Üçüncü Hata ##
 Hata daha önce de belirttiğim gibi yanlış hesap edilip ekrana yazılmasıydı %10 indirim yapmak için 0.9 değeri ile çarpmalıyız.
 Ve quantity değerini ekledik böylece eklenen ürün miktarını da hesaba kattık.
+#### Breakpoints ile izlenen yerler:
+- calculateTotal() başlangıcı
+- İndirim uygulama noktası
 
         else if(this.discountApplied){
             this.showError('İndirim zaten uygulandı!');
@@ -52,6 +55,10 @@ kodunu ekledim bu kodda birim fiyatına ek sepete eklenen ürün miktarı çarp�
 Buradaki hata 
 document.dispatchEvent(new Event('stockUpdate')); kodunun olmamasıydı ürünler siliyordu ancak mevcut stok bilgisi değişiyordu.
 Bu kodu ekleyerek stogun güncellenmeisni sağladık.
+#### Breakpoints kullanılan yerler:
+- removeItem() başlangıcı
+- Stok güncelleme
+- Event dispatch
 
 
 ## Altıncı Hata # 
