@@ -13,7 +13,7 @@ Altıncı olarak showError(message) fonksiyonunda hata mesajı gösterimi ekrand
 
 Kodları Debuglama ve Düzeltme Aşaması 
 
-##İlk hata için ##
+## İlk hata için ##
 const product = products.find(p => p.id === productId); 
 
 if (product.stock <= quantity) { // < yerine <= kullanıldı
@@ -27,12 +27,12 @@ Birinci Breakpoint den productId değerini product objesini  products arrayını
 Üçüncü Breakpoint den this.items arrayını sepetteki toplam ürün miktarını sepette ekli olan ürünlerin kaçar tane ekli oldugunu gözlemledim.
 
 
-##ikinci hata## 
+## İkinci hata ## 
 bu hata için ekstra Breakpoint vs eklenmesine gerek yok çünkü hata çok açık += yapmak yerine = kullansak 
 hata mesajları eklemek yerine mevcuttaki hata mesajını yazacak yani ne kadar kod gönderilirse gönderilsin tek hata gösterilecek 
 ek olarak showMessage fonksiyonunda oldugu gibi 3 saniyelik bir zaman ekledim böylece mesak 3 saniye sonunda kaybolacak.
 
-##Üçüncü Hata ##
+## Üçüncü Hata ##
 Hata daha önce de belirttiğim gibi yanlış hesap edilip ekrana yazılmasıydı %10 indirim yapmak için 0.9 değeri ile çarpmalıyız.
 Ve quantity değerini ekledik böylece eklenen ürün miktarını da hesaba kattık.
 
@@ -42,7 +42,7 @@ Ve quantity değerini ekledik böylece eklenen ürün miktarını da hesaba katt
 
 kodunu da ekleyerek kullanılan koda  kullanıldı uyarısı atadık.
 
-##Dördüncü Hata ##
+## Dördüncü Hata ##
 Bu hatayı düzeltmek için 
 <span>Birim Fiyat: ${item.price} TL (Toplam: ${item.price * item.quantity} TL)</span>
 kodunu ekledim bu kodda birim fiyatına ek sepete eklenen ürün miktarı çarpı birim fiyatı şeklinde toplam fiyatını gösterdim.
